@@ -1,0 +1,1739 @@
+
+<!doctype html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no,email=no">
+<link rel="stylesheet" href="/static/css/wap/dark/weui.min.css">
+<link rel="stylesheet" href="/static/css/wap/dark/jquery-weui.min.css">
+<link rel="stylesheet" href="/static/css/wap/dark/common.css?v=1609342829">
+<link rel="stylesheet" href="/static/css/wap/dark/style.css">
+<title>Defi</title>
+
+<meta name="description" content=Evolutionary Algorithm Network>
+<meta name="keywords" content=EAN>
+<link rel="shortcut icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="/static/css/wap/dark/easy.css">
+<style>
+    body {
+        color: #FFFFFF;
+    }
+    .easy-content{
+        background: #000923;
+    }
+    .content ,.submit{
+        background-color:transparent;
+    }
+    .lendTable {
+        background: #1B1D2E;
+    }
+    #tab2 .tab2 form .money-type .weui-cells {
+        background: #1B1D2E;
+        left: 3%;
+        width: 94%;
+    }
+    #tab2 .tab2 form .money-type {
+        background: url(image.png);
+    } 
+    .ws-cell .weui-cell input {
+        width: 100%;
+    } 
+    #dean_price, .weui-cell span{
+        color: #9A50FF;
+    } 
+   
+    .submit .btn{
+        background: linear-gradient(90deg, #634FFF 0%, #9945BD 100%);
+    }
+    #tab2 .tab2 form .money-type{
+        background-image: url('/static/img/wap/ean/easy/background_image.png');
+        background-size:contain;
+    } 
+    .weui-navbar{
+        position:relative
+    }
+    .weui-navbar+.weui-tab__bd{
+        padding-top: 0%;
+    }
+
+
+    
+    #tab2 .tab2 {
+        width: 100%;
+        background: #222437;
+    }
+    .money-type h4 {
+        margin-left: 0.5rem;
+    }
+
+    .weui-navbar__item2 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .apply-record {
+        width: 100%;
+    }
+
+    .apply-record .borrow_tab {
+        padding: 1rem 0 1rem 0;
+        text-align: center;
+        height: 3rem;
+        line-height: 1.5rem;
+    }
+    .apply-record .tab ,li{
+        /* Rectangle 27 */
+        display: inline-block;
+        /* width: 90%; */
+        /* width: 18rem; */
+        background: #1C1E30;
+        border-radius: 6rem;
+    }
+
+    .apply-record .tab .tab-item {
+        list-style: none;
+        display: inline-block;
+        width: 9rem;
+        text-align: center;
+        font-size: 0.7rem;
+        opacity:0.5;
+    }
+
+    .apply-record .tab .tab-item.active {
+        background: linear-gradient(180deg, #6C27E6 0%, rgba(238, 99, 242, 0.5) 100%);
+        color: #FFFFFF;
+        opacity:1;
+    }
+    
+    .weui-navbar__item a{
+        color: #FFFFFF;
+        opacity:0.5;
+     }
+
+    .products .mainCont {
+        display: none;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .products .mainCont.selected {
+        display: block;
+    }
+
+    /* tabs */
+    .apply-record2 {
+        width: 100%;
+    }
+
+    .apply-record2 .tabs {
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .apply-record2 .tabs .tab-item2 {
+        list-style: none;
+        display: inline-block;
+        width: 9rem;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .apply-record2 .tabs .tab-item2.active {
+        color: #3F86FF;
+    }
+
+    .products2 .mainCont2 {
+        display: none;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .products2 .mainCont2.selected {
+        display: block;
+    }
+
+    /* tabs3 */
+    .apply-record3 {
+        width: 100%;
+    }
+
+    .apply-record3 .tabs {
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .apply-record3 .tabs3 .tab-item3 {
+        list-style: none;
+        display: inline-block;
+        width: 9rem;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .apply-record3 .tabs3 .tab-item3.active {
+        color: #3F86FF;
+    }
+
+    .products3 .mainCont3 {
+        display: none;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .products3 .mainCont3.selected {
+        display: block;
+    }
+
+
+    .years {
+        margin-left: 1rem;
+    }
+
+    .weui-table,
+    table {
+        margin-left: 0.5rem;
+        width: 90%;
+        border-collapse: collapse;
+        line-height: 1.5rem;    
+        text-align: center;
+    }
+    .ws-cell2{
+        border-top:1px solid #606897;
+        border-bottom:1px solid #606897;
+    }
+
+    .summary{
+        margin-left: 0.75rem;
+    }
+    .ws-vcode-img{
+        height: 40px;
+        width: 100px;
+    }
+    
+</style>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/static/plugins/layui/layui.all.js"></script>
+<script type="text/javascript" src="/static/plugins/lazyload/jquery.lazyload.min.js"></script>
+<script type='text/javascript' src='/static/js/lang/lang.js?v=1609342829'></script>
+<script type='text/javascript' src='/static/js/common.js?v=160934282911111'></script>
+<script type='text/javascript' src='/static/js/common_view.js?v=1609342829'></script>
+<script type='text/javascript' src='/static/js/common_websocket.js?v=1609342829'></script>
+<script type='text/javascript' src="/static/js/clipboard.min.js"></script>
+<script type="text/javascript" src="/static/js/fastclick.js"></script>
+<script type="text/javascript" src="/static/js/jquery-weui.min.js"></script>
+<script>
+        window.conf = {
+            "ROOT": "",
+            "APP": "",
+            "OSS": "",
+            "STATIC": "/static",
+            "SUFFIX": "html",
+            "SMS_VERFY": "",
+            "PHONE_VERFY": "",
+            "USER_ID": "0",
+            "USER_PHOTO": "''",
+            "USER_NAME": "''",
+            "TIME_TASK": "1",
+            "COMMON_WEBSOCKET_URL" : "wss://www.eanex.io/wsotc",
+        };
+        $(function () {
+            WST.initVisitor();
+           // WST.initWebSocket();
+        });
+        
+    </script>
+</head>
+<body ontouchstart>
+<div class="easy-content w_content">
+<div style="float:right;">
+
+<div class="change-lang" style="display: inline-block;">
+<span style="color:white;">languages</span>
+<div class="lang-list" style="display: none;color: #9A50FF;opacity:0.5;">
+<dl>
+<dd lang="zh-cn" data-name="changeLang">中文</dd>
+<dd lang="en-us" data-name="changeLang">English</dd>
+
+<dd lang="ja-jp" data-name="changeLang">日本語</dd>
+<dd lang="vi-vn" data-name="changeLang">Việt Nam</dd>
+</dl>
+</div>
+</div>&nbsp;&nbsp;
+<a href="/wap/login/login.html" class="now_login" style="float:right;"><span style="color: #9A50FF;">Login</span></a>
+</div>
+<div style="clear: both;"></div>
+<script type="text/javascript">
+    $(function() {
+        FastClick.attach(document.body);
+        // if(localStorage.getItem('lang')) {
+        //     alert(localStorage.getItem('lang'));
+        //     alert(1);
+        // 	if(localStorage.getItem('lang')=='zh-cn'){
+        //     	$(".lang").text("中文");
+        //     	$(".lang").attr("lang",'zh-cn');
+        // 	}else{
+        //     	$(".lang").text("English");
+        //     	$(".lang").attr("lang",'en-us');
+        // 	}
+		// }
+        //切换语言
+        // $(".lang").click(function () {
+        //     var text=$(this).text();
+        //     if(text=="英文"){
+        //         $(this).text("Chinese");
+        //         $(this).attr("lang",'en-us');
+        //     }else{
+        //         $(this).text("英文");
+        //         $(this).attr("lang",'zh-cn');
+
+        //     }
+        //     // localStorage.setItem('lang', $(this).attr('lang'));
+		// 	var data = {
+		// 		'lang': $(this).attr('lang')
+		// 	};
+
+		// 	$.get("/wap/index/lang.html", data, function() {
+		// 		location.reload();
+
+		// 	});
+				
+        // });
+        
+        $(".logout").click(function () {
+            $.modal({
+                title: "",
+                text: "Are you sure you want to log out?",
+                buttons: [
+                    {
+                        text: formReg.cancel, className: "default", onClick: function () {
+                        	
+                    		}
+                    },
+                    {
+                        text: formReg.confirm, onClick: function () {
+                            $.ajax({
+                                url: "/wap/login/logout.html",
+                                data: {
+                                   
+                                },
+                                success: function (data) {
+									if(data.status==1){
+										$.toast(data.msg);
+                                        location.reload();
+									}
+                                }
+                            })
+                    }
+                    }
+                ]
+            });
+        });
+    });
+</script>
+<script>
+    $(function(){
+        //日期
+        
+        if(localStorage.getItem('lang')) {
+            //document.getElementById("textlang").innerHTML = '<img src="' + localStorage.getItem('langSrc') + '"  height="18" />';
+			var langText = localStorage.getItem('lang');
+            if(langText=='zh-cn'){
+            	$('.islang').text('中文');
+            }else if(langText == 'en-us'){
+            	$('.islang').text('English');
+            }
+			// else if(langText == 'ko-kr'){
+            //     $('.islang').text('한국어');
+			// }
+            else  if(langText == 'ja-jp'){
+                $('.islang').text('日本語');
+			}else if(langText == 'vi-vn'){
+                $('.islang').text('Việt Nam');
+			}
+        } else {
+        	$('.islang').text('English');
+            //document.getElementById("textlang").innerHTML = '<img src="/static/img/pic_flag_02.png"  height="18" />';
+        }
+    });
+    //切换中英文
+    $('body').on('touchstart', '.change-lang', function() {
+        $('.lang-list').show();
+        $('#login_user').hide();
+        window.setTimeout(function(){
+            $('.lang-list').hide();
+            $('#login_user').show();
+        },4000);
+    });
+    $('body').on('click', '.lang-list dl dd', function() {
+        var that = this;
+        //          $('.islang').find('.textlang').html($(that).text());
+        localStorage.setItem('langSrc', $(that).attr('data-src'));
+        localStorage.setItem('lang', $(that).attr('lang'));
+        var data = {
+            'lang': $(that).attr('lang')
+        };
+        $.get("/home/index/lang.html", data, function() {
+            location.reload();
+        });
+
+    });
+</script>
+<br>
+<div class="easy-box-tap" style="margin: 0px;">
+<div class="weui-tab">
+<div class="weui-navbar">
+<div class="weui-navbar__item  weui-bar__item--on" href="#tab2"><i>Lending & Borrowing</i></div>
+<div class="weui-navbar__item" href=""><i><a href="/wap/easy/index.html">Dashboard</a></i></div>
+<div class="weui-navbar__item " href=""><i><a href="/wap/easy/account.html">Account Statement</a></i></div>
+</div>
+<div class="weui-tab__bd">
+<div id="tab2" class="weui-tab__bd-item weui-tab__bd-item--active">
+<div class="tab2" style="padding:0;">
+ <div class="apply-record">
+<div class='borrow_tab'>
+<ul class="tab">
+<li class="tab-item ya_borrow active">Lenders Contract</li>
+<li class="tab-item ya_borrow">Borrowers Contract</li>
+</ul>
+</div>
+<div id='dean_price' style="text-align: center;">DEAN/USDT：<span>0.8512</span></div>
+<div class="content products">
+<div class="mainCont selected">
+<div class="years">Annualized lending rate</div>
+<div class="lendTable">
+<table class="weui-table">
+<thead>
+<tr>
+<th></th>
+<th>7 days</th>
+<th>14 days</th>
+<th>30 days</th>
+<th>90 days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td title="name">USDT</td>
+<td title="7天">5.72%</td>
+<td title="14天">5.95%</td>
+<td title="30天">6.25%</td>
+<td title="90天">6.55%</td>
+</tr>
+<tr>
+<td title="name">BTC</td>
+<td title="7天">7.05%</td>
+<td title="14天">7.25%</td>
+<td title="30天">7.75%</td>
+<td title="90天">8.55%</td>
+</tr>
+<tr>
+<td title="name">ETH</td>
+<td title="7天">5.05%</td>
+<td title="14天">5.25%</td>
+<td title="30天">5.75%</td>
+<td title="90天">6.55%</td>
+</tr>
+<tr>
+<td title="name">BTCMOON</td>
+<td title="7天">14.25%</td>
+<td title="14天">17.52%</td>
+<td title="30天">22.52%</td>
+<td title="90天">27.57%</td>
+</tr>
+<tr>
+<td title="name">ETHMOON</td>
+<td title="7天">15.75%</td>
+ <td title="14天">18.52%</td>
+<td title="30天">24.22%</td>
+<td title="90天">29.57%</td>
+</tr>
+<tr>
+<td title="name">TRX</td>
+<td title="7天">5.06%</td>
+<td title="14天">5.26%</td>
+<td title="30天">5.76%</td>
+<td title="90天">6.56%</td>
+</tr>
+<tr>
+<td title="name">GOLDMOON</td>
+<td title="7天">12.05%</td>
+<td title="14天">15.55%</td>
+<td title="30天">20.02%</td>
+<td title="90天">24.05%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="lendFrom">
+<form action="#">
+<div class="money-type">
+<h4 style="margin-left: 15px;">Lending Asset</h4>
+<div class="weui-cells">
+<div class="usdt-select" id="#yac_coin">
+<input readonly id="picker1" value="" />
+<i class="icon icon-select"></i>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Contract Duration</h4>
+<div class="weui-cells">
+<i class="icon icon-select"></i>
+<select class="days" name="days" id="day_c" style="margin-left: 15px;height: 40px; width: 100%;background-color:transparent;color: #959EC6;border: 0;">
+<option data-id="1" data-time="7" value="seven" selected="selected">7 days</option>
+<option data-id="2" data-time="14" value="fourteen">14 days</option>
+<option data-id="3" data-time="30" value="thirty">30 days</option>
+<option data-id="4" data-time="90" value="ninety">90 days</option>
+</select>
+</div>
+<h4 style="margin-left: 15px;">Number of lent</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="ya_c" class="weui-input" type="number" maxlength="8" autocomplete="off" onkeyup="javascript:WST.isNumberdote(this,4)">
+</div>
+ <div class="asset"></div>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Equivalent USDT Value</h4>
+<div class="weui-cells ws-cell">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input class="weui-input" id="usdt_num" type="number" value="0.00" disabled>
+</div>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Annualized lending rate</h4>
+<div class="weui-cells ws-cell">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="yearslilv" class="weui-input" type="text" value="0.00" disabled>
+<span>%</span>
+</div>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Expected Returns</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="yqsy" class="weui-input" type="text" value="0.00000" disabled>
+</div>
+<div class="asset"></div>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Expected Dean Received</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="cdean" class="weui-input" type="text" value="0" disabled>
+</div>
+<span>Dean</span>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Enter Secondary Password</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="passwords_c" class="weui-input" type="password" maxlength="16" autocomplete="off">
+</div>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Enter Caption Code</h4>
+<div class="weui-cells ws-cell ws-cell2">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+ <input class="ipt weui-input ws-input" id="verifyCode_c" autocomplete="off" name="verifyCode" ccy-required="required">
+</div>
+<div class="weui-cell__ft">
+<img id='verifyImg_c' class="weui-vcode-img ws-vcode-img" src="/home/index/getverify.html" onclick='javascript:WST.getVerify("#verifyImg_c")'>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="submit">
+<div class="btn" onclick="ycLend();">CONFIRM & SUBSCRIBE</div>
+</div>
+</div>
+<div class="mainCont">
+<div class="years">Annualized Borrowing Rate</div>
+<div class="lendTable">
+<table class="weui-table">
+<thead>
+<tr>
+<th></th>
+<th>7 days</th>
+<th>14 days</th>
+<th>30 days</th>
+<th>90 days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td title="name">USDT</td>
+<td title="7天">7.72%</td>
+<td title="14天">7.95%</td>
+<td title="30天">8.25%</td>
+<td title="90天">8.55%</td>
+</tr>
+<tr>
+<td title="name">BTC</td>
+<td title="7天">9.05%</td>
+<td title="14天">9.25%</td>
+<td title="30天">9.75%</td>
+<td title="90天">10.55%</td>
+</tr>
+<tr>
+<td title="name">ETH</td>
+<td title="7天">7.05%</td>
+<td title="14天">7.25%</td>
+<td title="30天">7.75%</td>
+<td title="90天">8.55%</td>
+</tr>
+<tr>
+<td title="name">BTCMOON</td>
+<td title="7天">16.25%</td>
+<td title="14天">19.52%</td>
+ <td title="30天">24.52%</td>
+<td title="90天">29.57%</td>
+</tr>
+<tr>
+<td title="name">ETHMOON</td>
+<td title="7天">17.75%</td>
+<td title="14天">20.52%</td>
+<td title="30天">26.22%</td>
+<td title="90天">31.57%</td>
+</tr>
+<tr>
+<td title="name">TRX</td>
+<td title="7天">7.06%</td>
+<td title="14天">7.26%</td>
+<td title="30天">7.76%</td>
+<td title="90天">8.56%</td>
+</tr>
+<tr>
+<td title="name">GOLDMOON</td>
+<td title="7天">14.05%</td>
+<td title="14天">17.55%</td>
+<td title="30天">22.05%</td>
+<td title="90天">26.05%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="lendFrom">
+<form action="#">
+<div class="money-type">
+<h4 style="margin-left: 15px;">Collateral</h4>
+<div class="weui-cells">
+<div class="weui-cell" style="float: left; width: 50%;">
+<div class="weui-cell__bd">
+<input id="ya_j" class="weui-input" type="number" maxlength="8" autocomplete="off" onkeyup="javascript:WST.isNumberdote(this,4)">
+</div>
+</div>
+<div class="usdt-select" style="float: right; width: 50%;">
+<input readonly id="picker2" value="BTC" style="background-color:transparent;color: #959EC6;border: 0;" />
+<i class="icon icon-select"></i>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Equivalent USDT Value</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input class="weui-input" id="get_num3" type="number" value="0.00" disabled>
+</div>
+</div>
+ </div>
+<h4 style="margin-left: 15px;">Borrowing Asset</h4>
+<div class="weui-cells">
+<div class="usdt-select">
+
+<input class="weui-input" type="text" value="USDT" style="margin-left: 15px;" disabled>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Contract Duration</h4>
+<div class="weui-cells ws-cell">
+<select class="days2" id="day_j" style="margin-left: 15px;height: 40px; width: 100%;background-color:transparent;color: #959EC6;border: 0;">
+<option data-id="1" data-time="7" value="seven" selected="selected">7 days</option>
+<option data-id="2" data-time="14" value="fourteen">14 days</option>
+<option data-id="3" data-time="30" value="thirty">30 days</option>
+<option data-id="4" data-time="90" value="ninety">90 days</option>
+</select>
+</div>
+<h4 style="margin-left: 15px;">Quantity To Receive</h4>
+<div class="weui-cells ws-cell">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="get_num" class="weui-input" type="text" value="0.00" disabled>
+<span class="jieru">USDT</span>
+</div>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Annualized Borrowing Rate</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="year_fee_j" class="weui-input" type="text" value="0.00" disabled>
+</div>
+<span>%</span>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Expected Repayment</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="getNum_fee" class="weui-input" type="text" value="0.00" disabled>
+</div>
+<span class="jieru">USDT</span>
+</div>
+ </div>
+<h4 style="margin-left: 15px;">Expected Dean Received</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="jdean" class="weui-input" type="text" value="0.00" disabled>
+</div>
+<span>Dean</span>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Enter Secondary Password</h4>
+<div class="weui-cells">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input id="passwords_j" class="weui-input" type="password" maxlength="16" autocomplete="off">
+</div>
+</div>
+</div>
+<h4 style="margin-left: 15px;">Enter Caption Code</h4>
+<div class="weui-cells ws-cell ws-cell2">
+<div class="weui-cell">
+<div class="weui-cell__bd">
+<input class="ipt weui-input ws-input" id="verifyCode_j" autocomplete="off" name="verifyCode" ccy-required="required">
+</div>
+<div class="weui-cell__ft">
+<img id='verifyImg_j' class="weui-vcode-img ws-vcode-img" src="/home/index/getverify.html" onclick='javascript:WST.getVerify("#verifyImg_j")'>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="submit">
+<div class="btn" onclick="ycBorrow();">CONFIRM & SUBSCRIBE</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="menu" class="menu weui-popup__container popup-left">
+<div class="weui-popup__overlay"></div>
+<div class="weui-popup__modal">
+<div class="trade-header-box">
+<div class="container">
+<div class="trade-header">
+<div class="trade-name">
+<span class="trade-text">Search</span>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-box">
+<div class="menu-title">Contract</div>
+<div id="time1" class="btn-box btn-box1">
+<div class="on" data-tid="1" data-time=" ">All</div>
+<div class="" data-tid="2" data-time="seven">7days</div>
+<div class="" data-tid="3" data-time="fourteen">14days</div>
+<div class="" data-tid="4" data-time="thirty">30days</div>
+<div class="" data-tid="5" data-time="ninety">90days</div>
+</div>
+<div class="menu-title">Status</div>
+<div id="status1" class="btn-box btn-box2">
+<div class="on" data-sid="1" data-status=" ">All</div>
+<div class="" data-sid="2" data-status="1">Open</div>
+<div class="" data-sid="3" data-status="2">Closed</div>
+<div class="" data-sid="4" data-status="3">Expired for redemption</div>
+</div>
+<div id="set1" class="btn-box submit">
+<div class="reset">Reset</div>
+<div class="close-popup" onclick="yac_order();">Search</div>
+</div>
+</div>
+</div>
+</div>
+<div id="menu1" class="menu weui-popup__container popup-left">
+<div class="weui-popup__overlay"></div>
+<div class="weui-popup__modal">
+<div class="trade-header-box">
+<div class="container">
+<div class="trade-header">
+<div class="trade-name">
+<span class="trade-text">Search</span>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-box">
+<div class="menu-title">Contract</div>
+<div id="time2" class="btn-box btn-box1">
+<div class="on" data-tid="1" data-time=" ">All</div>
+<div class="" data-tid="2" data-time="seven">7days</div>
+<div class="" data-tid="3" data-time="fourteen">14days</div>
+<div class="" data-tid="4" data-time="thirty">30days</div>
+<div class="" data-tid="5" data-time="ninety">90days</div>
+</div>
+<div class="menu-title">Status</div>
+<div id="status2" class="btn-box btn-box2">
+<div class="on" data-sid="1" data-status=" ">All</div>
+<div class="" data-sid="2" data-status="1">Open</div>
+<div class="" data-sid="3" data-status="2">Closed</div>
+<div class="" data-sid="4" data-status="3">Expired for redemption</div>
+</div>
+<div id="set2" class="btn-box submit">
+<div class="reset">Reset</div>
+<div class="close-popup" onclick="yaj_order();">Search</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+    .weui-tabbar:before {
+        border-top: 1px solid #192446;
+    }
+    .weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+        color: #9A50FF;
+    }
+    .weui-tabbar__icon img{
+        height: 85%;
+    }
+</style>
+<div class="weui-tabbar footer-nav">
+<a href="/wap/easy/order.html" class="weui-tabbar__item  weui-bar__item--on ">
+<div class="weui-tabbar__icon">
+<img src="/static/img/Union2.png" alt="">
+</div>
+<p class="weui-tabbar__label">Defi</p>
+</a>
+<a href="/wap/token/index.html" class="weui-tabbar__item ">
+<div class="weui-tabbar__icon">
+<img src="/static/img/deal2.png" alt="">
+</div>
+<p class="weui-tabbar__label">Transaction</p>
+</a>
+<a href="/wap/markets/trade.html" class="weui-tabbar__item  ">
+<div class="weui-tabbar__icon">
+<img src="/static/img/bazaar2.png" alt="">
+</div>
+<p class="weui-tabbar__label">Market</p>
+</a>
+<a href="/wap/users/eam.html" class="weui-tabbar__item ">
+<div class="weui-tabbar__icon">
+<img src="/static/img/wallet2.png" alt="">
+</div>
+<p class="weui-tabbar__label">Wallet</p>
+</a>
+<a href="/wap/more/more.html" class="weui-tabbar__item ">
+<div class="weui-tabbar__icon">
+<img src="/static/img/more2.png" style="margin-top: 8px;height: 5px;" alt="">
+ </div>
+<p class="weui-tabbar__label">More</p>
+</a>
+</div>
+<script type="text/javascript">
+    $(function(){
+        var u = navigator.userAgent;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+        if(isAndroid){
+            $('input[type="text"],input[type="number"]').bind('focus',function(){
+                $('nav .weui-tabbar').css({'position':'static'});
+                $('.login-bot').css({'position':'static'});
+            }).bind('blur',function(){
+                $('nav .weui-tabbar').css({'position':'fixed','bottom':'0'});
+                $('.login-bot').css({'position':'fixed','bottom':'0'});
+            });
+        }
+        if($('.weui-tabbar__item.weui-bar__item--on')){
+            if($('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src') == '/static/img/Union2.png'){
+                $('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src','/static/img/Union.png');
+            }
+            if($('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src') == '/static/img/deal2.png'){
+                $('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src','/static/img/deal.png');
+            }
+            if($('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src') == '/static/img/bazaar2.png'){
+                $('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src','/static/img/bazaar.png');
+            }
+            if($('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src') == '/static/img/wallet2.png'){
+                $('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src','/static/img/wallet.png');
+            }
+            if($('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src') == '/static/img/more2.png'){
+                $('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src','/static/img/more.png');
+            }
+        }
+        //console.dir($('.weui-tabbar__item.weui-bar__item--on').find(".weui-tabbar__icon").children().attr('src'));
+    });
+</script>
+<script type="text/javascript" src="/static/js/template.js"></script>
+<script type="text/html" id="yac_order">
+    {{each data as items i}}
+    <ul class="tab3-ul">
+        <li class="li-one">
+            <p>{{items.coin}}</p>
+            <P>{{items.order_time}}</P>
+        </li>
+        <li>
+            <p>Duration</p>
+            <p>{{items.contract_period}}</p>
+        </li>
+        <li>
+            <p>Quantity</p>
+            <p>{{items.quantity}}</p>
+        </li>
+        <li>
+            <p>Value(USDT)</p>
+            <p>{{items.usdt_quantity}}</p>
+        </li>
+        <li>
+            <p>Status</p>
+            <p>{{items.status}}</p>
+        </li>
+        <li>
+            <p>Entry</p>
+            <p>{{items.expiration_time}}</p>
+        </li>
+    </ul>
+    {{/each}}
+</script>
+<script type="text/html" id="yaj_order">
+    {{each data as items i}}
+    <ul class="tab3-ul">
+        <li class="li-one">
+            <p>{{items.coin}}</p>
+            <P>
+                {{items.order_time}}
+            </P>
+        </li>
+        <li>
+            <p>Duration</p>
+            <p>{{items.contract_period}}</p>
+        </li>
+        <li>
+            <p>Quantity</p>
+            <p>{{items.quantity}}</p>
+        </li>
+        <li>
+            <p>Value(USDT)</p>
+            <p>{{items.usdt_quantity}}</p>
+        </li>
+        <li>
+            <p>Status</p>
+            <p>{{items.status}}</p>
+        </li>
+        <li>
+            <p>Expected Interest</p>
+            <p>{{items.total_interest}}</p>
+        </li>
+        <li>
+            <p>Expiry</p>
+            <p>{{items.expiration_time}}</p>
+        </li>
+        <li>
+            <p class="order-action">{{items.status == "Open"?"Operation"  : " "}}</p>
+            <p class="action">
+                <a href="javascript:;" data-id='{{items.orderId}}' class="">{{items.status == "Open"?"repayment"  : " "}}</a>
+            </p>
+        </li>
+    </ul>
+    {{/each}}
+</script>
+<script type="text/html" id="ean_record">
+    {{each data as items i}}
+    <ul class="tab3-ul">
+        <li class="li-one">
+            <p>Trader</p>
+            <p>{{items.userName}}</p>
+        </li>
+        <li class="li-one">
+            <p>Account Classification</p>
+            <p>{{items.level}}</p>
+        </li>
+        <li class="li-one">
+            <p>Asset</p>
+            <p>{{items.coin}}</p>
+        </li>
+        <li class="li-one">
+            <p>Income Earned</p>
+            <P>{{items.deal_fee}}</P>
+        </li>
+        <li class="li-one">
+            <p>Income Type</p>
+            <P>{{items.fx}}</P>
+        </li>
+        <li class="li-one">
+            <p>Date/Time</p>
+            <P>{{items.addtime}}</P>
+        </li>
+
+    </ul>
+    {{/each}}
+</script>
+<script>
+    //初始化变量
+    max = 10, page = 1;
+    $(function () {
+        //切换tab标签
+        $(".weui-navbar__item").click(function () {
+            $(".weui-loadmore").html('<i class="weui-loading"></i> <span class="weui-loadmore__tips">loading data</span>')
+            $(".infinite").infinite();
+            max = 10, page = 1;
+            var findbox = $($(this).attr("href")).find(".content-padded");
+            findbox.empty();
+            //ajaxdata(page, findbox);
+        })
+
+        $(".apply-record .tab .tab-item").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".products .mainCont").eq($(this).index()).show().siblings().hide();
+        })
+
+        $(".apply-record2 .tabs .tab-item2").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".products2 .mainCont2").eq($(this).index()).show().siblings().hide();
+        })
+        $(".apply-record3 .tabs3 .tab-item3").click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".products3 .mainCont3").eq($(this).index()).show().siblings().hide();
+        })
+        var ass = $(this).find("#picker1").val();
+        $(".asset").html(ass)
+    })
+    
+    function getData(ele) {
+        if("jc"==ele.id){
+            var params = {};
+            params.type = 1;
+            $.ajax({
+                url:"/easy/Main/orderlist",
+                type: "post",
+                dataType: "json",
+                data:params,
+                success:function(res){
+                    var res = JSON.parse(res);
+                    res = res.data;
+                    var findbox = $("#jcdiv").find(".content-padded");
+                    for (var i = 0; i < res.data.length; i++) {
+                        $("#jcdiv").find(".content-padded").append('<ul class="tab3-ul">' +
+                        '<li class="li-one" style="whith">' +
+                        '<p>' + res.data[i].coin + '</p>' +
+                        '<P>' + res.data[i].order_time + '</P>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Duration</p>' +
+                        '<p>' + res.data[i].contract_period + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Quantity</p>' +
+                        '<p>' + res.data[i].quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Value(USDT)</p>' +
+                        '<p>' + res.data[i].usdt_quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>interest rate</p>' +
+                        '<p>' + res.data[i].rate + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Status</p>' +
+                        '<p>' + res.data[i].status + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Expiry</p>' +
+                        '<p>' + res.data[i].expiration_time + '</p>' +
+                        '</li>' +
+                        '</ul>')
+                    }
+                }
+            });
+        }else{
+            var params = {};
+            params.type = 2;
+            $.ajax({
+                url:"/easy/Main/orderlist",
+                type: "post",
+                dataType: "json",
+                data:params,
+                success:function(res){
+                    var res = JSON.parse(res);
+                    res = res.data;
+                    var findbox = $("#jrdiv").find(".content-padded");
+                    for (var i = 0; i < res.data.length; i++) {
+                        var status_tit = '';
+                        var status_val = '';
+                        if (res.data[i].status == "Open") {
+                            status_tit = "Operation";
+                            status_val = "repayment";
+                        } else {
+                            status_tit = "";
+                            status_val = "";
+                        }
+                        $("#jrdiv").find(".content-padded").append('<ul class="tab3-ul">' +
+                            '<li class="li-one">' +
+                        '<p>' + res.data[i].coin + '</p>' +
+                        '<P>' + res.data[i].order_time + '</P>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Duration</p>' +
+                        '<p>' + res.data[i].contract_period + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Quantity</p>' +
+                        '<p>' + res.data[i].quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Value(USDT)</p>' +
+                        '<p>' + res.data[i].usdt_quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>interest rate</p>' +
+                        '<p>' + res.data[i].rate + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Status</p>' +
+                        '<p>' + res.data[i].status + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Expected Interest</p>' +
+                        '<p>' + res.data[i].total_interest + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Expiry</p>' +
+                        '<p>' + res.data[i].expiration_time + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p class="order-action">' + status_tit + '</p>' +
+                        '<p class="action">' +
+                        '<a href="javascript:;" data-id="' + res.data[i].orderId + '" class="">' + status_val + '</a>' +
+                        '</p>' +
+                        '</li>' +
+                        '</ul>')
+                    }
+                }
+            });
+        }
+    }
+    //ajax加载数据 p为page ele为元素
+    function ajaxdata(p, ele) {
+        //判断不同的tab标签
+        if (ele.parents('.weui-tab__bd-item').attr("id") == "tab3") {
+            var url = "/easy/Main/orderlist";
+            var params = {};
+            params.type = 2;
+            params.coin = coin_o;
+            params.contract_period = contract_period_o;
+            params.status = status_o;
+            params.page = page;
+            $.post(url, params, function (res) {
+                var res = JSON.parse(res);
+                res = res.data;
+                if (res.data.length == 0 || res.data.length < res.per_page) {
+                    //没有数据时
+                    $(".tab3").css('height', 'auto');
+                    $(".infinite").destroyInfinite()
+                    $(".weui-loadmore").html('<div class="weui-loadmore weui-loadmore_line"> <span class="weui-loadmore__tips">No information</span> </div>')
+                }
+                for (var i = 0; i < res.data.length; i++) {
+                    ele.append('<ul class="tab3-ul">' +
+                        '<li class="li-one">' +
+                        '<p>' + res.data[i].coin + '</p>' +
+                        '<P>' + res.data[i].order_time + '</P>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Duration</p>' +
+                        '<p>' + res.data[i].contract_period + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Quantity</p>' +
+                        '<p>' + res.data[i].quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Value(USDT)</p>' +
+                        '<p>' + res.data[i].usdt_quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Status</p>' +
+                        '<p>' + res.data[i].status + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Entry</p>' +
+                        '<p>' + res.data[i].expiration_time + '</p>' +
+                        '</li>' +
+                
+                        '</ul>')
+                }
+            })
+        } else if (ele.parents('.weui-tab__bd-item').attr("id") == "tab4") {
+            var url = "/easy/Main/orderlist";
+            var params = {};
+            params.type = 2;
+            params.coin = coin_o;
+            params.contract_period = contract_period_o;
+            params.status = status_o;
+            params.page = page;
+            $.post(url, params, function (res) {
+                var res = JSON.parse(res);
+                res = res.data;
+                if (res.data.length == 0 || res.data.length < res.per_page) {
+                    $(".infinite").destroyInfinite();
+                    $(".weui-loadmore").html('<div class="weui-loadmore weui-loadmore_line"> <span class="weui-loadmore__tips">No information</span> </div>')
+                }
+                for (var i = 0; i < res.data.length; i++) {
+                    var status_tit = '';
+                    var status_val = '';
+                    if (res.data[i].status == "Open") {
+                        status_tit = "Operation";
+                        status_val = "repayment";
+                    } else {
+                        status_tit = "";
+                        status_val = "";
+                    }
+                    ele.append('<ul class="tab3-ul">' +
+                        '<li class="li-one">' +
+                        '<p>' + res.data[i].coin + '</p>' +
+                        '<P>' + res.data[i].order_time + '</P>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Duration</p>' +
+                        '<p>' + res.data[i].contract_period + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Quantity</p>' +
+                        '<p>' + res.data[i].quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Value(USDT)</p>' +
+                        '<p>' + res.data[i].usdt_quantity + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Status</p>' +
+                        '<p>' + res.data[i].status + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Expected Interest</p>' +
+                        '<p>' + res.data[i].total_interest + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p>Expiry</p>' +
+                        '<p>' + res.data[i].expiration_time + '</p>' +
+                        '</li>' +
+                        '<li>' +
+                        '<p class="order-action">' + status_tit + '</p>' +
+                        '<p class="action">' +
+                        '<a href="javascript:;" data-id="' + res.data[i].orderId + '" class="">' + status_val + '</a>' +
+                        '</p>' +
+                        '</li>' +
+                        '</ul>')
+                }
+            })
+        } else if (ele.parents('.weui-tab__bd-item').attr("id") == "tab5") {
+            var url = "/easy/Main/backlist";
+            var params = {};
+            params.startime = '';
+            params.endtime = '';
+            params.page = page;
+            $.post(url, params, function (res) {
+                var res = JSON.parse(res);
+                res = res.data;
+                if (res.data.length == 0 || res.data.length < res.per_page) {
+                    $(".infinite").destroyInfinite()
+                    $(".weui-loadmore").html('<div class="weui-loadmore weui-loadmore_line"> <span class="weui-loadmore__tips">No information</span> </div>')
+                }
+                for (var i = 0; i < res.data.length; i++) {
+                    ele.append('<ul class="tab3-ul">' +
+                        '<li class="li-one">' +
+                        '<p>Trader</p>' +
+                        '<p>' + res.data[i].userName + '</p>' +
+                        '</li>' +
+                        '<li class="li-one">' +
+                        '<p>Account Classification</p>' +
+                        '<p>' + res.data[i].level + '</p>' +
+                        '</li>' +
+                        '<li class="li-one">' +
+                        '<p>Asset</p>' +
+                        '<p>' + res.data[i].coin + '</p>' +
+                        '</li>' +
+                        '<li class="li-one">' +
+                        '<p>Income Earned</p>' +
+                        '<P>' + res.data[i].deal_fee + '</P>' +
+                        '</li>' +
+                        '<li class="li-one">' +
+                        '<p>Income Type</p>' +
+                        '<P>' + res.data[i].fx + '</P>' +
+                        '</li>' +
+                        '<li class="li-one">' +
+                        '<p>Date/Time</p>' +
+                        '<P>' + res.data[i].addtime + '</P>' +
+                        '</li>' +
+                        '</ul>')
+                }
+            })
+        }
+    }
+</script>
+<script type="text/javascript" src="/templates/wap/view/default/easy/index.js?v=1609342829"></script>
+<script type="text/javascript">
+    var cCoin = ["USDT","BTC","GOLDMOON","ETH","BTCMOON","ETHMOON","TRX"];
+    var jCoin = ["USDT","BTC","ETH","GOLDMOON","BTCMOON","ETHMOON","TRX"];
+    // var cCoin = ["USDT","BTC","GOLDMOON","ETH","BTCMOON","ETHMOON","TRX"];
+    // var jCoin = ["USDT","BTC","ETH","GOLDMOON","BTCMOON","ETHMOON","TRX"];
+    $(function () {
+        $.toast.prototype.defaults.duration = 1000;//设置弹框显示时间为1秒
+        $('.mode').on('click', 'li', function () {
+            $(this).addClass('on').siblings().removeClass('on');
+        })
+        $('#yearslilv').val(seven_c)
+        $('#year_free_j').val(seven_j)
+    });
+
+    // 存入的数量
+    var yc_c=$('#ya_c').val()*1;
+    // 抵押的数量
+    var yc_j=$('#ya_j').val()*1;
+
+    $(".days").change(function(){
+        fee_id = $('.days option:selected').attr('data-id');
+        time = $('.days option:selected').attr('data-time');
+        dean_c();
+        if(fee_id==1){
+            $('#yearslilv').val(seven_c);
+            $('.day_fee_c').html((seven_c / 365).toFixed(8)+'%');
+            day_fee_c = (seven_c / 365);
+            $('#yqsy').val(((day_fee_c*time*yc_c)/100).toFixed(8));
+            $('#usdt_num').val((newprice_c*yc_c))
+        }else if(fee_id==2){
+            $('#yearslilv').val(fourteen_c);
+            $('.day_fee_c').html((fourteen_c / 365).toFixed(8)+'%');
+            day_fee_c = (fourteen_c / 365);
+            $('#yqsy').val(((day_fee_c*time*yc_c)/100).toFixed(8));
+            $('#usdt_num').val((newprice_c*yc_c))
+        }else if(fee_id==3){
+            $('#yearslilv').val(thirty_c);
+            $('.day_fee_c').html((thirty_c / 365).toFixed(8)+'%');
+            day_fee_c = (thirty_c / 365);
+            $('#yqsy').val(((day_fee_c*time*yc_c)/100).toFixed(8));
+            $('#usdt_num').val((newprice_c*yc_c))
+        }else if(fee_id==4){
+            $('#yearslilv').val(ninety_c);
+            $('.day_fee_c').html((ninety_c / 365).toFixed(8)+'%');
+            day_fee_c = (ninety_c / 365);
+            $('#yqsy').val(((day_fee_c*time*yc_c)/100).toFixed(8));
+            $('#usdt_num').val((newprice_c*yc_c))
+        }
+    });
+
+    $(".days2").change(function(){
+        fee_id = $('.days2 option:selected').attr('data-id');
+        time = $('.days2 option:selected').attr('data-time');
+        dean_j();
+        if (fee_id == 1) {
+            $('#year_fee_j').val(seven_j);
+            $('.day_fee_j').html((seven_j / 365).toFixed(8) + '%');
+            day_fee_j = (seven_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        } else if (fee_id == 2) {
+            $('#year_fee_j').val(fourteen_j);
+            $('.day_fee_j').html((fourteen_j / 365).toFixed(8) + '%');
+            day_fee_j = (fourteen_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        } else if (fee_id == 3) {
+            $('#year_fee_j').val(thirty_j );
+            $('.day_fee_j').html((thirty_j / 365).toFixed(8) + '%');
+            day_fee_j = (thirty_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        } else if (fee_id == 4) {
+            $('#year_fee_j').val(ninety_j);
+            $('.day_fee_j').html((ninety_j / 365).toFixed(8) + '%');
+            day_fee_j = (ninety_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        }
+    });
+
+
+    //下拉选择
+    $("#picker1").picker({
+        title: 'Deposit Asset',
+        toolbarCloseText: formReg.confirm,
+        cols: [
+            {
+                textAlign: 'center',
+                // values: ['BTC','ETH','USDT','USDC','DEAN','BTCMOON','ETHMOON','GOLDMOON']
+                values: jCoin
+            }
+        ],
+        onChange: function (result) {
+            $('.mode li:first-child').addClass('on').siblings('').removeClass('on');
+        },
+        onClose: function (result) {
+            $(".asset").html($("#picker1").val())
+        }
+    });
+
+    //下拉选择
+    $("#picker2").picker({
+        title: 'Contract Duration',
+        toolbarCloseText: formReg.confirm,
+        cols: [
+            {
+                textAlign: 'center',
+                values: cCoin
+                
+            }
+        ],
+        onChange: function (result) {
+            $('.mode li:first-child').addClass('on').siblings('').removeClass('on');
+        },
+        onClose: function (result) {
+        }
+    });
+
+    $("#picker3").picker({
+        title: 'SELECT ASSET',
+        toolbarCloseText: formReg.confirm,
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['7 days','14 days','30 days','90 days']
+            }
+        ],
+        onChange: function (result) {
+           
+        },
+        onClose: function (result) {
+        }
+    })
+    $("#picker4").picker({
+        title: 'SELECT ASSET',
+        toolbarCloseText: formReg.confirm,
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['BTC','ETH','USDT','USDC','DEAN','BTCMOON','ETHMOON','GOLDMOON']
+            }
+        ],
+        onChange: function (result) {
+            $('.mode li:first-child').addClass('on').siblings('').removeClass('on');
+        },
+        onClose: function (result) {
+            $(".jieru").html($("#picker4").val())
+        }
+    })
+    // var sid_c = 19526;
+    // var sid_j = 33412;
+    // var sid_r = 20960;
+    var sid_c = 19526;
+    var sid_j = 33412;
+    var sid_r = 20960;
+    var seven_c = 5.72;
+    var fourteen_c = 5.95;
+    var thirty_c = 6.25;
+    var ninety_c = 6.55;
+    // var seven_c = 5.72;
+    // var fourteen_c =5.95;
+    // var thirty_c = 6.25;
+    // var ninety_c = 6.55;
+
+    var seven_j = '';
+    var fourteen_j = '';
+    var thirty_j = '';
+    var ninety_j = '';
+
+    var newprice_c = 1;
+    var newprice_j = 1;
+    var fee_id = $(".days option:selected").attr('data-id');
+    var time = $(".days option:selected").attr('data-time');
+    var time_value = $(".days option:selected").attr('data-value');
+    var day_fee_c = (seven_c / 365);
+    $('.day_fee_c').html((seven_c / 365).toFixed(8) + '%');
+    var day_fee_j = '';
+
+
+    // DEAN收益配置信息
+    // var ecoinf = [{"id":1,"type":1,"borrow_num_star":100,"borrow_num_end":5000,"seven":"0.16","fourteen":"0.40","thirty":"0.80","ninety":"1.20","addtime":"2020-07-17 17:35:17","status":1},{"id":2,"type":1,"borrow_num_star":5000,"borrow_num_end":2147483647,"seven":"0.24","fourteen":"0.60","thirty":"1.20","ninety":"1.80","addtime":"2020-07-17 17:35:52","status":1}];
+    var ecoinf = [{"id":1,"type":1,"borrow_num_star":100,"borrow_num_end":5000,"seven":"0.16","fourteen":"0.40","thirty":"0.80","ninety":"1.20","addtime":"2020-07-17 17:35:17","status":1},{"id":2,"type":1,"borrow_num_star":5000,"borrow_num_end":2147483647,"seven":"0.24","fourteen":"0.60","thirty":"1.20","ninety":"1.80","addtime":"2020-07-17 17:35:52","status":1}];
+    $.each(ecoinf, function (i, j) {
+        $.each(j, function (m, n) {
+            if (i == 0) {
+            } else if (i == 1) {
+            }
+        });
+    });
+    var usdt_c = $("#picker1").val();
+    $('.usdt_coin_c').html(usdt_c);
+    var usdt_j = $("#picker2").val();
+    $('.usdt_coin_j').html(usdt_j);
+    // 存入的数量
+    var yc_c = $('#ya_c').val() * 1;
+    // 抵押的数量
+    var yc_j = $('#ya_j').val() * 1;
+    // 获取借入利率
+    $('.ya_borrow').click(function () {
+        $.ajax({
+            url: "/easy/Main/getcoincoinf", //请求接口地址
+            type: 'post', //请求方式
+            dataType: 'json', //数据类型
+            data: {
+                'coin': usdt_j,
+                'type': '2'
+            },
+            success: function (res) {
+                var res = JSON.parse(res);
+                newprice_j = res.data.newprice;
+                seven_j = res.data.seven;
+                fourteen_j = res.data.fourteen;
+                thirty_j = res.data.thirty;
+                ninety_j = res.data.ninety;
+                day_fee_j = (seven_j / 365);
+                $('#year_fee_j').val(seven_j);
+                // $('#year_fee_j').html(seven_j + '%');
+                $('.day_fee_j').html((seven_j / 365).toFixed(8) + '%');
+                $('.cny-span').html((newprice_j * yc_j).toFixed(8));
+                $('#get_num').val((newprice_j * yc_j * 0.7).toFixed(8));
+                $('#getNum_fee').val(((time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+
+            },
+        });
+    })
+    // 借出切换币种
+    $('#picker1').change(function () {
+        var usdt_c = $("#picker1").val();
+        $.ajax({
+            url: "/easy/Main/getcoincoinf",
+            async: true,
+            dataType: 'json',
+            type: "post",
+            data: {
+                'coin': usdt_c,
+                'type': '1'
+            },
+            success: function (res) {
+                var res = JSON.parse(res);
+                newprice_c = res.data.newprice;
+                seven_c = res.data.seven;
+                fourteen_c = res.data.fourteen;
+                thirty_c = res.data.thirty;
+                ninety_c = res.data.ninety;
+                day_fee_c = (seven_c / 365);
+                $('#year_fee_c').html(seven_c + '%');
+                $('#yearslilv').val(seven_c + '%')
+                $('.day_fee_c').html((seven_c / 365).toFixed(8) + '%');
+                $('#yqsy').val(((day_fee_c * time * yc_c) / 100).toFixed(8));
+                time=$(".days option:selected").attr('data-time')
+                $("#expectedReturn").val(((day_fee_c * time * yc_c) / 100).toFixed(8));
+                $('#usdt_num').val((newprice_c*yc_c))
+                dean_c();
+            }
+        });
+    });
+    // 借入切换币种
+    $('#picker2').change(function () {
+        var usdt_j = $("#picker2").val();
+        $.ajax({
+            url: "/easy/Main/getcoincoinf",
+            async: true,
+            dataType: 'json',
+            type: "post",
+            data: {
+                'coin': usdt_j,
+                'type': '2'
+            },
+            success: function (res) {
+                var res = JSON.parse(res);
+                newprice_j = res.data.newprice;
+                seven_j = res.data.seven;
+                fourteen_j = res.data.fourteen;
+                thirty_j = res.data.thirty;
+                ninety_j = res.data.ninety;
+                day_fee_j = (seven_j / 365);
+                $('#year_fee_j').val(seven_j);
+                $('.day_fee_j').html((seven_j / 365).toFixed(8) + '%');
+                $('.cny-span').html((newprice_j * yc_j).toFixed(8));
+                // 可获得数量
+                $('#get_num').val((newprice_j * yc_j * 0.7).toFixed(8));
+                $('#get_num3').val((newprice_j * yc_j * 0.7).toFixed(8));
+                time = $(".days2 option:selected").attr('data-time')
+                $('#getNum_fee').val(((time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+                dean_j();
+
+            },
+        });
+    });
+
+    seven_c = seven_c;
+    fourteen_c = fourteen_c;
+    thirty_c = thirty_c;
+    ninety_c = ninety_c;
+    newprice_c = newprice_c;
+
+    seven_j = seven_j;
+    fourteen_j = fourteen_j;
+    thirty_j = thirty_j;
+    ninety_j = ninety_j;
+    newprice_j = newprice_j;
+
+
+    // 存入的数量
+    var yc_c = $('#ya_c').val() * 1;
+    $('#ya_c').keyup(function () {
+        yc_c = $(this).val() * 1;
+        var coin = $("#picker1").val();
+        time = $('.days option:selected').attr('data-time')
+        $.ajax({
+            url: "/easy/Main/dEanInterest", //请求接口地址
+            type: 'post', //请求方式
+            dataType: 'json', //数据类型
+            data: {
+                'num': yc_c,
+                'type': '1',
+                'time': time,
+                'coin': coin
+            },
+            success: function (res) {
+                var res = JSON.parse(res);
+                $("#cdean").val(res.res);
+            }
+        });
+        time = $(".days option:selected").attr('data-time')
+        $('#yqsy').val(((day_fee_c * time * yc_c) / 100).toFixed(8));
+        $('#usdt_num').val((newprice_c*yc_c));
+
+    });
+    // 抵押的数量
+    $('#ya_j').keyup(function () {
+        yc_j = $(this).val() * 1;
+        $('.cny-span').html((newprice_j * yc_j).toFixed(8));
+        $('#get_num').val((newprice_j*yc_j*0.7).toFixed(8));
+        $('#usdt_num').val((newprice_j*yc_c*0.7).toFixed(8));
+        $('#get_num3').val((newprice_j*yc_j*0.7).toFixed(8));
+        time=$(".days2 option:selected").attr('data-time')
+        $('#getNum_fee').val(((time * 1 * yc_j * 0.7) / 100).toFixed(8));
+        var ya_j = $('#get_num').val();
+        $.ajax({
+            url: "/easy/Main/dEanInterest", //请求接口地址
+            type: 'post', //请求方式
+            dataType: 'json', //数据类型
+            data: {
+                'num': ya_j,
+                'type': '2',
+                'time': time,
+                'coin': 'USDT',
+            },
+            success: function (res) {
+                var res = JSON.parse(res);
+                $("#jdean").val(res.res);
+            },
+        });
+    });
+
+
+    // 計算預期收益
+    $('.mode1').on('click', 'li', function () {
+        fee_id = $(this).children().attr('data-id');
+        time = $(this).children().attr('data-time');
+        dean_c();
+        if (fee_id == 1) {
+            $('#year_fee_c').html(seven_c + '%');
+            $('.day_fee_c').html((seven_c / 365).toFixed(8) + '%');
+            day_fee_c = (seven_c / 365);
+            $('#yqsy').val(((day_fee_c * time * yc_c) / 100).toFixed(8));
+        } else if (fee_id == 2) {
+            $('#year_fee_c').html(fourteen_c + '%');
+            $('.day_fee_c').html((fourteen_c / 365).toFixed(8) + '%');
+            day_fee_c = (fourteen_c / 365);
+            $('#yqsy').val(((day_fee_c * time * yc_c) / 100).toFixed(8));
+        } else if (fee_id == 3) {
+            $('#year_fee_c').html(thirty_c + '%');
+            $('.day_fee_c').html((thirty_c / 365).toFixed(8) + '%');
+            day_fee_c = (thirty_c / 365);
+            $('#yqsy').val(((day_fee_c * time * yc_c) / 100).toFixed(8));
+        } else if (fee_id == 4) {
+            $('#year_fee_c').html(ninety_c + '%');
+            $('.day_fee_c').html((ninety_c / 365).toFixed(8) + '%');
+            day_fee_c = (ninety_c / 365);
+            $('#yqsy').val(((day_fee_c * time * yc_c) / 100).toFixed(8));
+        }
+    })
+    $('.mode2').on('click', 'li', function () {
+        fee_id = $(this).children().attr('data-id');
+        time = $(this).children().attr('data-time');
+        dean_j();
+        if (fee_id == 1) {
+            $('#year_fee_j').html(seven_j + '%');
+            $('.day_fee_j').html((seven_j / 365).toFixed(8) + '%');
+            day_fee_j = (seven_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        } else if (fee_id == 2) {
+            $('#year_fee_j').html(fourteen_j + '%');
+            $('.day_fee_j').html((fourteen_j / 365).toFixed(8) + '%');
+            day_fee_j = (fourteen_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        } else if (fee_id == 3) {
+            $('#year_fee_j').html(thirty_j + '%');
+            $('.day_fee_j').html((thirty_j / 365).toFixed(8) + '%');
+            day_fee_j = (thirty_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        } else if (fee_id == 4) {
+            $('#year_fee_j').html(ninety_j + '%');
+            $('.day_fee_j').html((ninety_j / 365).toFixed(8) + '%');
+            day_fee_j = (ninety_j / 365);
+            $('#getNum_fee').val(((day_fee_j * time * newprice_j * yc_j * 0.7) / 100).toFixed(8));
+        }
+    })
+
+    function dean_c() {
+        var ya_c = $('#ya_c').val() * 1;
+        var coin = $("#picker1").val();
+        $.ajax({
+            url: "/easy/Main/dEanInterest", //请求接口地址
+            type: 'post', //请求方式
+            dataType:'json', //数据类型
+            data: {
+                'num': ya_c,
+                'type': '1',
+                'time': 7,
+                'coin': coin,
+            },
+            success: function (res) {
+                var res = JSON.parse(res);
+                $("#cdean").val(res.res);
+            },
+        });
+    }
+    function dean_j() {
+        var ya_j = $('#get_num').val();
+        $.ajax({
+            url: "/easy/Main/dEanInterest", //请求接口地址
+            type: 'post', //请求方式
+            dataType: 'json', //数据类型
+            data: {
+                'num': ya_j,
+                'type': '2',
+                'time': 7,
+                'coin': 'USDT',
+            },
+            success: function (res) {
+
+                var res = JSON.parse(res);
+                $("#jdean").val(res.res);
+            },
+        });
+    }
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"609cdc0e5809d9fc","r":1,"version":"2020.12.2","si":10}'></script>
+</body>
+</html>
